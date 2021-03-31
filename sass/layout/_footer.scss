@@ -1,0 +1,43 @@
+@use "../utils/mixins" as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: #eee;
+    @include element(block) {
+      border-top: 1px solid #ddd;
+    }
+    @include element(footer1) {
+      padding-left: 30px;
+      line-height: 45px;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    @include element(footer2) {
+      text-align: center;
+      line-height: 40px;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    @include element(item) {
+      display: inline-block;
+      margin: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    @include element(img) {
+      width: 13px;
+    }
+    @include element(footer3) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include element(sub-block) {
+      margin: 0 20px 5px 20px;
+      padding: 0;
+    }
+  }

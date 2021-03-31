@@ -1,0 +1,43 @@
+@use "../utils/mixins" as *;
+
+.header {
+    z-index: 1;
+    position: absolute;
+    margin: 15px 10px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include element(item) {
+      display: inline-block;
+      margin: 0 4px 0 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+      @include modifier(icon) {
+        font-size: 1.2rem;
+        background: #fff;
+        padding: 12px;
+        border-radius: 50%;
+        margin: 0 5px;
+        &:hover {
+          background: #efefef;
+        }
+      }
+      @include modifier(button) {
+        padding: 0 25px;
+        line-height: 2.2rem;
+        border-radius: 5px;
+        background-color: #2076e6;
+        margin: 0 12px 0 4px;
+        > a {
+          color: white;
+        }
+        &:hover {
+          box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+            -1px -1px 5px 0 rgba(0, 0, 0, 0.1);
+          background-color: lighten(#2076e6, 2%);
+        }
+      }
+    }
+  }

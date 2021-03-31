@@ -1,0 +1,66 @@
+//@use "./sass/utils/variables" as *;
+//@use "./sass/utils/functions" as *;
+@use "./sass/utils/mixins" as *;
+//@use "./sass/utils/extensions" as *;
+//@use "./sass/base/base" as *;
+//@use "./sass/base/typography" as *;
+@use "./sass/components/buttons" as *;
+@use "./sass/layout/header" as *;
+@use "./sass/layout/footer" as *;
+//@use "./sass/sass/layouts/nav" as *;
+//@use "./sass/layouts/container" as *;
+//@use "./sass/layouts/form" as *;
+//@use "./sass/pages/work" as *;
+//@use "./sass/pages/about" as *;
+//@use "./sass/pages/project" as *;
+
+* {
+  list-style-type: none;
+  font-size: 0.99rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-block {
+  position: relative;
+  top: -11%;
+  width: 45%;
+  text-align: center;
+  @include element(logo) {
+    margin: 30px auto;
+  }
+}
+
+.search {
+  border: 1px solid hsla(0°, 0, 80, 0.8);
+  border-radius: 25px;
+  height: 2rem;
+  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+      -1px -1px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  @include element(fa-search) {
+    opacity: 0.2;
+  }
+  @include element(searchbar) {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  @include element(fa-microphone) {
+    padding-right: 5px;
+  }
+}
