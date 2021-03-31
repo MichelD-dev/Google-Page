@@ -31,7 +31,6 @@
   text-decoration: underline;
 }
 .header__item_icon {
-  display: inline-block;
   font-size: 1.2rem;
   background: #fff;
   padding: 12px;
@@ -42,7 +41,6 @@
   background: #efefef;
 }
 .header__item_button {
-  display: inline-block;
   padding: 0 25px;
   line-height: 2.2rem;
   border-radius: 5px;
@@ -121,10 +119,8 @@
   width: 45%;
   text-align: center;
 }
-@inclue element(logo) {
-  .central-block {
-    margin: 30px auto;
-  }
+.central-block__logo {
+  margin: 30px auto;
 }
 
 .search {
