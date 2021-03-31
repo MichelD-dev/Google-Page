@@ -1,18 +1,18 @@
-//@use "./sass/utils/variables" as *;
-//@use "./sass/utils/functions" as *;
-@use "./sass/utils/mixins" as *;
-//@use "./sass/utils/extensions" as *;
-//@use "./sass/base/base" as *;
-//@use "./sass/base/typography" as *;
-@use "./sass/components/buttons" as *;
-@use "./sass/layout/header" as *;
-@use "./sass/layout/footer" as *;
-//@use "./sass/sass/layouts/nav" as *;
-//@use "./sass/layouts/container" as *;
-//@use "./sass/layouts/form" as *;
-//@use "./sass/pages/work" as *;
-//@use "./sass/pages/about" as *;
-//@use "./sass/pages/project" as *;
+//@import "/sass/utils/variables";
+//@import "/sass/utils/functions";
+@import "/sass/utils/mixins";
+//@import "/sass/utils/extensions";
+//@import "/sass/base/base";
+//@import "/sass/base/typography";
+@import "/sass/components/buttons";
+@import "/sass/layout/header";
+@import "/sass/layout/footer";
+//@import "/sass/sass/layouts/nav";
+//@import "/sass/layouts/container";
+//@import "/sass/layouts/form";
+//@import "/sass/pages/work";
+//@import "/sass/pages/about";
+//@import "/sass/pages/project";
 
 * {
   list-style-type: none;

@@ -13,4 +13,7 @@
     @content;
   }
 }
-
+@mixin item($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+  display: inline-block;
+}
