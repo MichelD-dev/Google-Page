@@ -100,8 +100,6 @@
 }
 
 * {
-  list-style-type: none;
-  font-size: 0.99rem;
   color: #666;
   text-decoration: none;
 }
